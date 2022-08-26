@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Mostwasted";
   src: url("./Mostwasted.ttf");
-}
+} */
 
 
 
@@ -15,6 +15,7 @@
 :root {
   --ff-primary: "Lora", serif;
   --ff-secondary: "Roboto Slab", serif;
+  --ff-logo: 'Silkscreen', cursive;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -139,7 +140,7 @@ a:hover {
   color: var(--clr-primary);
 }
 .logo {
-  font-family: 'Silkscreen', cursive;
+  font-family: var(--ff-logo);
   font-size: 2.5rem;
   padding: 0 2rem;
 } 
