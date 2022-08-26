@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "Mostwasted";
-  src: url("./Mostwasted.ttf") format('truetype');
-} */
-
 
 
 /* ===== CSS Custom Properties ===== */
@@ -24,13 +19,23 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
+  --clr-timelineBack: #f2f2f2;
   --clr-accent2: #f2f2f2;
+  --clr-third: #303030;
 
   --fs-h1-big: 4rem;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+}
+
+.dark-theme {
+  --clr-light: #000106;
+  --clr-dark: #fff;
+  --clr-accent2: #16e0bd;
+  --clr-third: #000106;
+  --clr-timelineBack: #222;
 }
 
 html {
@@ -212,7 +217,10 @@ a:hover {
 }
 
 
-
+#icon {
+  max-width: 40px;
+  cursor: pointer;
+}
 
 /* ===== Hamburger ===== */
 .hamburger {
@@ -288,7 +296,7 @@ a:hover {
 }
 .home-content .home__col2 p {
   margin-top: 0.5rem;
-  background-color: var(--clr-accent2);
+  background-color: var(--clr-timelineBack);
 }
 .home-content .home__col1 img {
   width: 400px;
@@ -387,7 +395,6 @@ a:hover {
   text-align: center;
 }
 .section__title--timeline {
-  color: var(--clr-dark);
   position: relative;
 }
 
@@ -404,7 +411,7 @@ a:hover {
   position: absolute;
   height: 100%;
   width: 4px;
-  background: var(--clr-dark);
+  /* background: var(--clr-dark); */
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
@@ -419,7 +426,7 @@ a:hover {
   justify-content: flex-end;
 }
 .wrapper .row section {
-  background: var(--clr-accent2);
+  background: var(--clr-timelineBack);
   color: var(--clr-dark);
   border-radius: 5px;
   width: calc(50% - 40px);
@@ -709,8 +716,7 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   font-size: var(--fs-h3);
-  background: var(--clr-dark);
-  color: var(--clr-accent);
+  background: var(--clr-third);
 }
 .contact-me .myMap {
   width: 600px;
@@ -785,7 +791,7 @@ a:hover {
   outline: none;
   opacity: 85%;
   cursor: pointer;
-  color: var(--clr-dark);
+  color: var(--clr-light);
 }
 .scroll-to-top .fa {
   font-size: 30px;
