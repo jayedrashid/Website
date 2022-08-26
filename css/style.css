@@ -139,7 +139,7 @@ a:hover {
   color: var(--clr-primary);
 }
 .logo {
-  font-family: "Mostwasted";
+  font-family: 'Silkscreen', cursive;
   font-size: 2.5rem;
   padding: 0 2rem;
 } 
